@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Üst Menü */
+.navbar-custom {
+    background-color: hsl(24, 45%, 98%);
+}
+
+/* Karşılama (Hero) Alanı */
+.hero-section {
+    background: linear-gradient(135deg, #4a3222 0%, #6f4e37 100%);
+    color: rgb(29, 13, 13);
+    padding: 100px 0;
+}
+
+/* Ürün Kartları */
+.menu-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #d7ccc8;
+}
+
+/* Kahve Rengi Buton */
+.btn-coffee {
+    background-color: #4a3222;
+    color: white;
+    border: none;
+}
+
+.btn-coffee:hover {
+    background-color: #362418;
+    color: white;
+}
+
+/* Fiyat Tablosu Başlığı */
+.table-coffee thead {
+    background-color: #2c1e16;
+    color: white;
+}
+
+/* Rezervasyon Form Kutusu */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eaeaea;
+}
+
+/* Rezervasyon Yanı Kafe Görseli */
+.rezervasyon-img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #d7ccc8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}

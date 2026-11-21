@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Kafe - Menü ve Rezervasyon</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Özel CSS Dosyası -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ÜST MENÜ -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">AROMA KAFE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item"><a class="nav-link active" href="#anasayfa">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#urunler">Öne Çıkanlar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fiyatlar">Menü & Fiyatlar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rezervasyon">Rezervasyon</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO ALANI -->
+    <header id="anasayfa" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Aroma Kafe'ye Hoş Geldiniz!</h1>
+            <p class="lead mb-4">Taze kavrulmuş nitelikli kahveler ve günlük ev yapımı tatlılarla gününüze keyif katın.</p>
+            <a href="#urunler" class="btn btn-light btn-lg px-4 fw-semibold text-dark">Menüyü İncele</a>
+        </div>
+    </header>
+
+    <!-- 3. ÖNE ÇIKAN ÜRÜNLER (3 FOTOĞRAF) -->
+    <section id="urunler" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Öne Çıkan Lezzetlerimiz</h2>
+                <p class="text-muted">Misafirlerimizin en çok tercih ettiği imza kahve ve tatlılarımız.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Kart 1 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100">
+                        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="Caramel Macchiato">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title fw-bold">Caramel Macchiato</h4>
+                            <p class="card-text text-muted mt-2">Taze çekilmiş espresso, kadifemsi süt köpüğü ve özel ev yapımı karamel sosu.</p>
+                            <div class="mt-auto pt-3">
+                                <h5 class="fw-bold mb-3">135 TL</h5>
+                                <a href="#rezervasyon" class="btn btn-coffee px-4">Sipariş / Masa Ayırt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kart 2 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100">
+                        <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="San Sebastian Cheesecake">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title fw-bold">San Sebastian Cheesecake</h4>
+                            <p class="card-text text-muted mt-2">Akışkan kıvamlı özel peynir dolgusu ve yanında eritilmiş Belçika çikolatası ile.</p>
+                            <div class="mt-auto pt-3">
+                                <h5 class="fw-bold mb-3">180 TL</h5>
+                                <a href="#rezervasyon" class="btn btn-coffee px-4">Sipariş / Masa Ayırt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kart 3 -->
+                <div class="col-md-4">
+                    <div class="card menu-card h-100">
+                        <img src="https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=800" class="card-img-top" alt="Iced Spanish Latte">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h4 class="card-title fw-bold">Iced Spanish Latte</h4>
+                            <p class="card-text text-muted mt-2">Yoğunlaştırılmış tatlı süt, soğuk süt ve çift shot espressonun ferahlatıcı uyumu.</p>
+                            <div class="mt-auto pt-3">
+                                <h5 class="fw-bold mb-3">145 TL</h5>
+                                <a href="#rezervasyon" class="btn btn-coffee px-4">Sipariş / Masa Ayırt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FİYAT LİSTESİ TABLOSU -->
+    <section id="fiyatlar" class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Kafe Menü & Fiyat Listesi</h2>
+                <p class="text-muted">Güncel içecek ve tatlı fiyatlarımızı inceleyebilirsiniz.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-center align-middle table-coffee">
+                    <thead>
+                        <tr>
+                            <th class="py-3">Ürün Adı</th>
+                            <th class="py-3">Kategori / Porsiyon</th>
+                            <th class="py-3">Fiyat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-semibold">Türk Kahvesi</td>
+                            <td>Sıcak İçecek (Tek / Duble)</td>
+                            <td>85 TL / 110 TL</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Filtre Kahve</td>
+                            <td>Sıcak / Soğuk (Orta Boy)</td>
+                            <td>100 TL</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Caramel Macchiato</td>
+                            <td>Sıcak / Soğuk (Büyük Boy)</td>
+                            <td>135 TL</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Iced Spanish Latte</td>
+                            <td>Soğuk Kahve (Büyük Boy)</td>
+                            <td>145 TL</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">San Sebastian Cheesecake</td>
+                            <td>Tatlı (1 Dilim + Çikolata Sos)</td>
+                            <td>180 TL</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Tiramisu</td>
+                            <td>Tatlı (Özel Kupa)</td>
+                            <td>165 TL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MASA REZERVASYON FORMU + 4. FOTOĞRAF -->
+    <section id="rezervasyon" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Masa Rezervasyon Formu</h2>
+                <p class="text-muted">Yerinizi önceden ayırtmak için aşağıdaki formu doldurunuz.</p>
+            </div>
+
+            <div class="row justify-content-center align-items-stretch g-4">
+                <!-- 4. Fotoğraf -->
+                <div class="col-md-5">
+                    <img src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&w=800" class="rezervasyon-img" alt="Aroma Kafe İç Mekan">
+                </div>
+
+                <!-- Rezervasyon Formu -->
+                <div class="col-md-7">
+                    <div class="form-container h-100">
+                        <form id="rezervasyonForm">
+                            <div class="mb-3">
+                                <label for="adSoyad" class="form-label fw-semibold">Ad Soyad</label>
+                                <input type="text" class="form-control" id="adSoyad" placeholder="Adınızı ve soyadınızı giriniz" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefon" class="form-label fw-semibold">Telefon Numarası</label>
+                                <input type="tel" class="form-control" id="telefon" placeholder="05XX XXX XX XX" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="tarih" class="form-label fw-semibold">Tarih</label>
+                                    <input type="date" class="form-control" id="tarih" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="saat" class="form-label fw-semibold">Saat</label>
+                                    <input type="time" class="form-control" id="saat" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="kisiSayisi" class="form-label fw-semibold">Kişi Sayısı & Alan Seçimi</label>
+                                <select class="form-select" id="kisiSayisi" required>
+                                    <option value="" selected disabled>Bir seçenek belirleyiniz</option>
+                                    <option value="1-2">1 - 2 Kişi (İç Mekan)</option>
+                                    <option value="1-2-bahce">1 - 2 Kişi (Bahçe)</option>
+                                    <option value="3-4">3 - 4 Kişi (İç Mekan)</option>
+                                    <option value="3-4-bahce">3 - 4 Kişi (Bahçe)</option>
+                                    <option value="5+">5+ Kişi (Grup Masası)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-coffee px-4 py-2 fw-semibold">Rezervasyon Yap</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALT BİLGİ -->
+    <footer class="navbar-custom text-white text-center py-3 mt-4">
+        <div class="container">
+            <small>&copy; 2026 Aroma Kafe. Tüm Hakları Saklıdır.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Özel JavaScript Dosyası -->
+    <script src="app.js"></script>
+</body>
+</html>
