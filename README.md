@@ -1,1 +1,1 @@
-# vize-proje-devi
+# vize-proje-ödevi
